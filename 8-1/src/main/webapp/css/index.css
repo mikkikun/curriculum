@@ -47,7 +47,7 @@ ul li.pass {
  /* 問④ 背景を青色にする */
  background-color: blue;
  /* 問⑤ 文字の色を白にする */
- color: wthite;
+ color: white;
  /* 問⑥ 背景に対して文字を縦方向に中央揃え */
  align-items: center;
 }
