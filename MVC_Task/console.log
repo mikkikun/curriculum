@@ -891,3 +891,148 @@ Logger cannot be resolved
 
 
 Stacktrace:] が根本的要因と共に投げられました [火 11月 01 19:27:32 JST 2022]
+重大: パス [/MVC_Task] を持つコンテキスト内のサーブレット [jsp] のServlet.service() が例外 [JSPのクラスをコンパイルできません: 
+
+生成されたJavaファイル: [/Users/nattsukun/LetsEngineer/curriculum/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/work/Catalina/localhost/MVC_Task/org/apache/jsp/login_jsp.java] の [17] 行でエラーが発生しました
+Only a type can be imported. skillcheck.bean.ResponseBean resolves to a package
+
+生成されたJavaファイル: [/Users/nattsukun/LetsEngineer/curriculum/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/work/Catalina/localhost/MVC_Task/org/apache/jsp/login_jsp.java] の [18] 行でエラーが発生しました
+Only a type can be imported. skillcheck.bean.EmployeeBean resolves to a package
+
+生成されたJavaファイル: [/Users/nattsukun/LetsEngineer/curriculum/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/work/Catalina/localhost/MVC_Task/org/apache/jsp/login_jsp.java] の [19] 行でエラーが発生しました
+Only a type can be imported. skillcheck.logger.Logger resolves to a package
+
+JSPファイル: [/login.jsp] の中の [13] 行目でエラーが発生しました
+ResponseBean cannot be resolved to a type
+10:     //リクエストより社員番号を取得: 関数型インターフェース（ラムダ式）
+11:     Function<HttpServletRequest, Object[]> rmdGetResponseInfo = (rmdRequest) -> {
+12:         // request: responseBean
+13:         ResponseBean rb = (ResponseBean) request.getAttribute("responseBean");
+14:         int requestStatus = 0;
+15:         String message = "";
+16:         String empId = "";
+
+
+JSPファイル: [/login.jsp] の中の [13] 行目でエラーが発生しました
+ResponseBean cannot be resolved to a type
+10:     //リクエストより社員番号を取得: 関数型インターフェース（ラムダ式）
+11:     Function<HttpServletRequest, Object[]> rmdGetResponseInfo = (rmdRequest) -> {
+12:         // request: responseBean
+13:         ResponseBean rb = (ResponseBean) request.getAttribute("responseBean");
+14:         int requestStatus = 0;
+15:         String message = "";
+16:         String empId = "";
+
+
+JSPファイル: [/login.jsp] の中の [20] 行目でエラーが発生しました
+EmployeeBean cannot be resolved to a type
+17:         if (Objects.nonNull(rb)) {
+18:             requestStatus = rb.getRequestStaus();
+19:             message = rb.getMessage();
+20:             EmployeeBean emp = rb.getEmplyeeBeanList().stream().findFirst().orElse(null);
+21:             if (Objects.nonNull(emp)) empId = emp.getEmpId();
+22:         }
+23:         return new Object[]{requestStatus, message, empId};
+
+
+JSPファイル: [/login.jsp] の中の [26] 行目でエラーが発生しました
+ResponseBean cannot be resolved to a type
+23:         return new Object[]{requestStatus, message, empId};
+24:     };
+25: 
+26:     ResponseBean responseBean = null;
+27:     // エラーメッセージ表示用
+28:     String message = "";
+29:     int requestStatus = 0;
+
+
+JSPファイル: [/login.jsp] の中の [34] 行目でエラーが発生しました
+Logger cannot be resolved
+31: 
+32:     try {
+33:         if (Objects.isNull(session) || session.isNew()) {
+34:             Logger.log(new Throwable(), "セッションなし");
+35:             Object[] objects = rmdGetResponseInfo.apply(request);
+36:             requestStatus = (int) objects[0];
+37:             message = (String) objects[1];
+
+
+JSPファイル: [/login.jsp] の中の [40] 行目でエラーが発生しました
+Logger cannot be resolved
+37:             message = (String) objects[1];
+38:             empId = (String) objects[2];
+39:         } else {
+40:             Logger.log(new Throwable(), "セッションあり");
+41:             // session: redirect
+42:             final String redirect = (String) session.getAttribute("redirect");
+43:             if (Objects.nonNull(redirect)) {
+
+
+JSPファイル: [/login.jsp] の中の [44] 行目でエラーが発生しました
+Logger cannot be resolved
+41:             // session: redirect
+42:             final String redirect = (String) session.getAttribute("redirect");
+43:             if (Objects.nonNull(redirect)) {
+44:                 Logger.log(new Throwable(), "redirect = " + redirect);
+45:                 message = redirect;
+46:                 session.invalidate();
+47:             }
+
+
+JSPファイル: [/login.jsp] の中の [51] 行目でエラーが発生しました
+ResponseBean cannot be resolved to a type
+48: 
+49:             if (requestStatus < 2 && message.isEmpty()) {
+50:                 // ログインエラー時
+51:                 ResponseBean rb = (ResponseBean) session.getAttribute("responseBean");
+52:                 if (Objects.nonNull(rb)) {
+53:                     requestStatus = rb.getRequestStaus();
+54:                     message = rb.getMessage();
+
+
+JSPファイル: [/login.jsp] の中の [51] 行目でエラーが発生しました
+ResponseBean cannot be resolved to a type
+48: 
+49:             if (requestStatus < 2 && message.isEmpty()) {
+50:                 // ログインエラー時
+51:                 ResponseBean rb = (ResponseBean) session.getAttribute("responseBean");
+52:                 if (Objects.nonNull(rb)) {
+53:                     requestStatus = rb.getRequestStaus();
+54:                     message = rb.getMessage();
+
+
+JSPファイル: [/login.jsp] の中の [55] 行目でエラーが発生しました
+EmployeeBean cannot be resolved to a type
+52:                 if (Objects.nonNull(rb)) {
+53:                     requestStatus = rb.getRequestStaus();
+54:                     message = rb.getMessage();
+55:                     EmployeeBean emp = rb.getEmplyeeBeanList().stream().findFirst().orElse(null);
+56:                     if (Objects.nonNull(emp)) {
+57:                         empId = emp.getEmpId();
+58:                     }
+
+
+JSPファイル: [/login.jsp] の中の [61] 行目でエラーが発生しました
+Logger cannot be resolved
+58:                     }
+59:                 }
+60:             }
+61:             Logger.log(new Throwable(), "message = " + message);
+62:         }
+63:     } catch (Exception e) {
+64:         Logger.log(new Throwable(), e);
+
+
+JSPファイル: [/login.jsp] の中の [64] 行目でエラーが発生しました
+Logger cannot be resolved
+61:             Logger.log(new Throwable(), "message = " + message);
+62:         }
+63:     } catch (Exception e) {
+64:         Logger.log(new Throwable(), e);
+65:     }
+66: %>
+67: <!DOCTYPE html>
+
+
+Stacktrace:] が根本的要因と共に投げられました [火 11月 01 21:03:26 JST 2022]
+[MEMORY:29554208][2022/11/01 11:59:27.896] [org.apache.jsp.login_jsp] [_jspService] [161] セッションなし

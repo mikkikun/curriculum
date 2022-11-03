@@ -15,6 +15,8 @@ public final class EmployeeBean {
     private String _empId;
     /** ・パスワード */
     private String _password;
+    
+    private String _name;
     /** ・メールアドレス */
     private String _mail;
     /** ・得意言語 or 学習中の言語 */
@@ -106,6 +108,13 @@ public final class EmployeeBean {
     /**
      * @param name <pre>セットするStringクラスの氏名</pre>
      */
+    public void setName(String name) {
+        this._name = name;
+    }
+    public String getName() {
+        return _name;
+    }
+    
     public void setMail(String mail) {
         this._mail = mail;
     }

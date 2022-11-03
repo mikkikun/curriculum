@@ -18,6 +18,8 @@ class Car {
     this.number = number;
   }
   getNumGas(){
-    console.log('ガソリンは${this.gasoline}です。ナンバーは${this.number}です');
+    console.log(`ガソリンは${this.gasoline}です。ナンバーは${this.number}です`);
   }
 }
+let a = new Car('q','w');
+a.getNumGas();
