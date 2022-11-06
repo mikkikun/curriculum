@@ -76,7 +76,7 @@ public final class EmployeeManagementService extends BaseService implements Empl
         try {
             // FIXME Step-5-2: executeGetConnection()内を修正
             // MEMO: Windowsは【control】、Macは【command】を押下しながらクリックすることでメソッド定義へジャンプ可能
-            super.executeGetConnection(eCase,asList);
+            super.executeGetConnection();
 
             // 共通処理: 社員情報テーブルへのアクセス
             // FIXME Step-5-3: SELECT文の実行(5-1, 5-2)
