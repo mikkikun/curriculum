@@ -69,7 +69,8 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <!-- FIXME Step-1-1: login.jspに適用するcssファイルのリンクタグを記述しなさい。-->
-<link rel="stylesheet" href="login.css" />
+<link rel="stylesheet" href="/MVC_Task/WebContent/css/login.css" />
+<link rel="stylesheet" href="/MVC_Task/WebContent/css/common.css" />
 <!-- Tips1: common.css、login.cssの2つを適用-->
 <!-- Tips2: 適用するcssファイルのパスの書き方に注意 -->
 <!-- [ここへ記述] -->

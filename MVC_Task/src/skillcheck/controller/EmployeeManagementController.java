@@ -16,6 +16,7 @@ import skillcheck.bean.ResponseBean;
 import skillcheck.constant.ConstMessage;
 import skillcheck.exception.MVCException;
 import skillcheck.logger.Logger;
+import skillcheck.service.EmployeeManagementService;
 import skillcheck.util.RequestTypeUtil;
 import skillcheck.util.RequestTypeUtil.RequestType;
 
@@ -43,7 +44,7 @@ public final class EmployeeManagementController extends BaseServlet {
         // FIXME Step-4-1: 社員情報管理サービスのインスタンスを生成しなさい。
         // Tips: 定義済みフィールド変数を使用
         // [ここへ記述]
-       
+        EmployeeManagementService   = new EmployeeManagementService();
 
         boolean hasSession = false;
 
@@ -138,6 +139,8 @@ public final class EmployeeManagementController extends BaseServlet {
             // FIXME Step-4-3: 社員情報管理サービスのインスタンス変数を生成しなさい。
             // Tips: 定義済みフィールド変数を使用
             // [ここへ記述]
+            EmployeeManagementService apply = new EmployeeManagementService();
+            
             
 
             reqEmpIdList = rmdGetEmpIdList.apply(request);
@@ -168,6 +171,7 @@ public final class EmployeeManagementController extends BaseServlet {
             // Tips1: リクエストへレスポンス情報をセット
             // Tips2: キー名は「CONST_REQUST_KEY_FOR_RESPONSE_BEAN」使用
             // [ここへ記述]
+            
 
             Logger.log(new Throwable(), "遷移先 = " + this.destinationTarget);
 
