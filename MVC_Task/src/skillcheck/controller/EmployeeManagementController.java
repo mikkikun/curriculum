@@ -139,7 +139,7 @@ public final class EmployeeManagementController extends BaseServlet {
             // FIXME Step-4-3: 社員情報管理サービスのインスタンス変数を生成しなさい。
             // Tips: 定義済みフィールド変数を使用
             // [ここへ記述]
-            EmployeeManagementService apply = new EmployeeManagementService();
+            EmployeeManagementService  = new EmployeeManagementService();
             
             
 
@@ -171,7 +171,7 @@ public final class EmployeeManagementController extends BaseServlet {
             // Tips1: リクエストへレスポンス情報をセット
             // Tips2: キー名は「CONST_REQUST_KEY_FOR_RESPONSE_BEAN」使用
             // [ここへ記述]
-            
+            request.setAttribute(CONST_REQUST_KEY_FOR_RESPONSE_BEAN, response);
 
             Logger.log(new Throwable(), "遷移先 = " + this.destinationTarget);
 

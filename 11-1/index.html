@@ -23,17 +23,17 @@
         <option id="selected_all" value="select4">全て表示</option>
     </select>
     <table>
-        <tr>
-            <th style="display:none;" id = "japan1">日本</th>
-            <td style="display:none;" id = "japan2">こんにちは</td>
-            <td style="display:none;" id = "japan3">ありがとう</td>
-            <td style="display:none;" id = "japan4">さようなら</td>
+        <tr style="display:none;" id="japan">
+            <th>日本</th>
+            <td>こんにちは</td>
+            <td>ありがとう</td>
+            <td>さようなら</td>
         </tr>
-        <tr>
-            <th style="display:none;" id = "english1">English</th>
-            <td style="display:none;" id = "english2">Hello</td>
-            <td style="display:none;" id = "english3">Thank you</td>
-            <td style="display:none;" id = "english4">Good Bye</td>
+        <tr style="display:none;" id = "english">
+            <th>English</th>
+            <td>Hello</td>
+            <td>Thank you</td>
+            <td>Good Bye</td>
         </tr>
     </table>
 
@@ -43,41 +43,17 @@
           if(document.getElementById('selects')){
             ids = document.getElementById('selects').value;
             if(ids == 'select1'){
-              document.getElementById('japan1').style.display = '';
-              document.getElementById('japan2').style.display = '';
-              document.getElementById('japan3').style.display = '';
-              document.getElementById('japan4').style.display = '';
-              document.getElementById('english1').style.display = '';
-              document.getElementById('english2').style.display = '';
-              document.getElementById('english3').style.display = '';
-              document.getElementById('english4').style.display = '';
+              document.getElementById('japan').style.display = '';
+              document.getElementById('english').style.display = '';
             }else if(ids == 'select2'){
-              document.getElementById('japan1').style.display = '';
-              document.getElementById('japan2').style.display = '';
-              document.getElementById('japan3').style.display = '';
-              document.getElementById('japan4').style.display = '';
-              document.getElementById('english1').style.display = 'none';
-              document.getElementById('english2').style.display = 'none';
-              document.getElementById('english3').style.display = 'none';
-              document.getElementById('english4').style.display = 'none';
+              document.getElementById('japan').style.display = '';
+              document.getElementById('english').style.display = 'none';
             }else if(ids == 'select3'){
-              document.getElementById('japan1').style.display = 'none';
-              document.getElementById('japan2').style.display = 'none';
-              document.getElementById('japan3').style.display = 'none';
-              document.getElementById('japan4').style.display = 'none';
-              document.getElementById('english1').style.display = '';
-              document.getElementById('english2').style.display = '';
-              document.getElementById('english3').style.display = '';
-              document.getElementById('english4').style.display = '';
+              document.getElementById('japan').style.display = 'none';
+              document.getElementById('english').style.display = '';
             }else if(ids == 'select4'){
-              document.getElementById('japan1').style.display = '';
-              document.getElementById('japan2').style.display = '';
-              document.getElementById('japan3').style.display = '';
-              document.getElementById('japan4').style.display = '';
-              document.getElementById('english1').style.display = '';
-              document.getElementById('english2').style.display = '';
-              document.getElementById('english3').style.display = '';
-              document.getElementById('english4').style.display = '';
+              document.getElementById('japan').style.display = '';
+              document.getElementById('english').style.display = '';
             }
           }
           //window.onload = changeLang()
