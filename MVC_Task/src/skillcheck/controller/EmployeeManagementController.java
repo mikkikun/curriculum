@@ -44,7 +44,7 @@ public final class EmployeeManagementController extends BaseServlet {
         // FIXME Step-4-1: 社員情報管理サービスのインスタンスを生成しなさい。
         // Tips: 定義済みフィールド変数を使用
         // [ここへ記述]
-        EmployeeManagementService   = new EmployeeManagementService();
+        ems = new EmployeeManagementService();
 
         boolean hasSession = false;
 
@@ -139,7 +139,7 @@ public final class EmployeeManagementController extends BaseServlet {
             // FIXME Step-4-3: 社員情報管理サービスのインスタンス変数を生成しなさい。
             // Tips: 定義済みフィールド変数を使用
             // [ここへ記述]
-            EmployeeManagementService  = new EmployeeManagementService();
+            ems  = new EmployeeManagementService();
             
             
 
