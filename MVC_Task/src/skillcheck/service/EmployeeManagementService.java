@@ -190,7 +190,7 @@ public final class EmployeeManagementService extends BaseService implements Empl
             	//一人目の社員情報
                 // [ここへ記述]
             	 while (resultSet.next()) {
-                     
+            		 Logger.log(new Throwable(), "pEmployeeBeanList[0].empId = " + emp.getEmpId());
                      }
                     
                     
