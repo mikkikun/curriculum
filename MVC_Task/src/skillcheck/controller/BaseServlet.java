@@ -150,7 +150,7 @@ public abstract class BaseServlet extends HttpServlet {
             // Tips2: 完全一致検索の社員情報取得を呼び出すこと
             // Tips3: 第二引数の渡し方に注意すること
             // ←ここへ記述
-        	String eCase = request.getParameter("empid");
+        	String empId = request.getParameter("id");
         	String password = request.getParameter("password");
             // 最初の1件を取得
             resEmployeeBean = responseBean.getEmplyeeBeanList().stream().findFirst().orElse(null);
