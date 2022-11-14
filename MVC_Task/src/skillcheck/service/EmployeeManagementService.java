@@ -76,12 +76,12 @@ public final class EmployeeManagementService extends BaseService implements Empl
         try {
             // FIXME Step-5-2: executeGetConnection()内を修正
             // MEMO: Windowsは【control】、Macは【command】を押下しながらクリックすることでメソッド定義へジャンプ可能
-            super.executeGetConnection();
+            super.executeGetConnection(JDBC_CONNECTION,JDBC_POSTGRES_USER,JDBC_POSTGRES_PASS;
 
             // 共通処理: 社員情報テーブルへのアクセス
             // FIXME Step-5-3: SELECT文の実行(5-1, 5-2)
             // Tips: executeSelectQueryメソッド内を修正してください。
-            this.executeSelectQuery(eCase, pEmployeeBeanList);
+            this.executeSelectQuery(eCase,pEmployeeBeanList);
 
             // SQL実行結果よりメタデータを取得
             final ResultSetMetaData meta = resultSet.getMetaData();
@@ -188,6 +188,13 @@ public final class EmployeeManagementService extends BaseService implements Empl
                 // Tips1: ループ文を使用すること（正解は複数パターンあります）
                 // Tips2: 格納先はローカル変数のempとすること
                 // [ここへ記述]
+            	while (resultSet.next()) {
+                    String empId = resultSet.getString("id");
+                    pEmployeeBeanList.setId(empId);
+                }
+                    
+                    
+                    
 
                 if (Objects.nonNull(emp)) {
                     Logger.log(new Throwable(), "pEmployeeBeanList[0].empId = " + emp.getEmpId());
@@ -199,6 +206,8 @@ public final class EmployeeManagementService extends BaseService implements Empl
                     // 2. 1で作成したオブジェクトをpreparedStatementへ格納
                     // Tips: sbQueryは、sbQuery.toString()でStringへ変換
                     // [ここへ記述]
+                    preparedStatement = connection.sbQuery.toString(onstSQL.SELECT_BY_EMPID);
+                    
 
                     // LIKEを使用するため、パラメータを編集
                     final String empId = ExecuteCase.FIND_BY_EMPID_WITH_LIKE.equals(eCase)
@@ -208,9 +217,11 @@ public final class EmployeeManagementService extends BaseService implements Empl
                     // FIXME Step-5-6: preparedStatementに適切なパラメーターをセットしなさい。
                     // Tips: パラメータをセットするインデックスに注意
                     // [ここへ記述]
+                    preparedStatement = connection.preparedStatement(SELECT_BASE);
 
                     // FIXME Step-5-7: preparedStatementよりSQL(SELECT文)を実行し、resultSetへ結果を格納しなさい。
                     // [ここへ記述]
+                    resultSet = preparedStatement.executeQuery();
 
                     Logger.log(new Throwable(), "SQL: " +  this.preparedStatement.toString());
                 }
