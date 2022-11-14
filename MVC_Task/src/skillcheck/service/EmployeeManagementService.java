@@ -76,7 +76,7 @@ public final class EmployeeManagementService extends BaseService implements Empl
         try {
             // FIXME Step-5-2: executeGetConnection()内を修正
             // MEMO: Windowsは【control】、Macは【command】を押下しながらクリックすることでメソッド定義へジャンプ可能
-            super.executeGetConnection(JDBC_CONNECTION,JDBC_POSTGRES_USER,JDBC_POSTGRES_PASS;
+            super.executeGetConnection();
 
             // 共通処理: 社員情報テーブルへのアクセス
             // FIXME Step-5-3: SELECT文の実行(5-1, 5-2)
@@ -187,11 +187,11 @@ public final class EmployeeManagementService extends BaseService implements Empl
                 // FIXME Step-5-4: pEmployeeBeanListの「1件目の要素のみ」から社員情報を取得しなさい。
                 // Tips1: ループ文を使用すること（正解は複数パターンあります）
                 // Tips2: 格納先はローカル変数のempとすること
+            	//一人目の社員情報
                 // [ここへ記述]
-            	while (resultSet.next()) {
-                    String empId = resultSet.getString("id");
-                    pEmployeeBeanList.setId(empId);
-                }
+            	 while (resultSet.next()) {
+                     
+                     }
                     
                     
                     
@@ -206,7 +206,7 @@ public final class EmployeeManagementService extends BaseService implements Empl
                     // 2. 1で作成したオブジェクトをpreparedStatementへ格納
                     // Tips: sbQueryは、sbQuery.toString()でStringへ変換
                     // [ここへ記述]
-                    preparedStatement = connection.sbQuery.toString(onstSQL.SELECT_BY_EMPID);
+                    preparedStatement = connection.prepareStatement(ConstSQL.SELECT_BY_EMPID);
                     
 
                     // LIKEを使用するため、パラメータを編集
@@ -217,11 +217,11 @@ public final class EmployeeManagementService extends BaseService implements Empl
                     // FIXME Step-5-6: preparedStatementに適切なパラメーターをセットしなさい。
                     // Tips: パラメータをセットするインデックスに注意
                     // [ここへ記述]
-                    preparedStatement = connection.preparedStatement(SELECT_BASE);
+                    preparedStatement.setString(reqStatus, empId);
 
                     // FIXME Step-5-7: preparedStatementよりSQL(SELECT文)を実行し、resultSetへ結果を格納しなさい。
                     // [ここへ記述]
-                    resultSet = preparedStatement.executeQuery();
+                    resultSet = preparedStatement.executeQuery(ConstSQL.SELECT_BY_EMPID);
 
                     Logger.log(new Throwable(), "SQL: " +  this.preparedStatement.toString());
                 }
