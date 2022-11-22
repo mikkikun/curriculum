@@ -3,10 +3,9 @@ package skillcheck.service;
 import java.sql.ResultSetMetaData;
 import java.sql.SQLException;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import java.util.Objects;
-
-import org.apache.catalina.tribes.util.Arrays;
 
 // FIXME Step-5-1: 「EmployeeBean, ResponseBean, ConstMessage, ConstSQL, EmployeeDao, SC5Exception, Logger」をインポートしなさい。
 // [ここへ記述]
@@ -98,13 +97,28 @@ public final class EmployeeManagementService extends BaseService implements Empl
                 // FIXME Step-5-8: SQLの抽出結果（resultSet）の各カラムデータを該当する社員情報Beanへセットしなさい。
                 // Tips1: セット項目: 社員番号、パスワード、名前、メールアドレス、プログラミング言語、コメント
                 // Tips2: 正解パターンは複数あり
-                EmployeeBean employeeBean = new EmployeeBean(
-                        this.resultSet.getString("empId"),
-                        this.resultSet.getString("password"),
-                        this.resultSet.getString("name"),
-                        this.resultSet.getString("mail"),
-                        this.resultSet.getString("programingLanguage"),
-                        this.resultSet.getString("comment"));
+                String a = resultSet.getString("empId");
+                String b = resultSet.getString("password");
+                String c = resultSet.getString("name");
+                String d = resultSet.getString("mail");
+                String e = resultSet.getString("programingLanguage");
+                String f = resultSet.getString("comment");
+                
+                EmployeeBean employeeBean = new EmployeeBean();
+                employeeBean.setEmpId(a);
+                employeeBean.setPassword(b);
+                employeeBean.setName(c);
+                employeeBean.setMail(d);
+                employeeBean.setProgramingLanguage(e);
+                employeeBean.setComment(f);
+                
+//                EmployeeBean employeeBean = new EmployeeBean(
+//                        this.resultSet.getString("empId"),
+//                        this.resultSet.getString("password"),
+//                        this.resultSet.getString("name"),
+//                        this.resultSet.getString("mail"),
+//                        this.resultSet.getString("programingLanguage"),
+//                        this.resultSet.getString("comment"));
 
                 // 社員情報リストへ追加
                 empResultList.add(employeeBean);

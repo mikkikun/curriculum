@@ -1,30 +1,77 @@
-情報: Serverのバージョン名:     Apache Tomcat/9.0.68 [火 11月 15 21:25:33 JST 2022]
-情報: Server ビルド:            Oct 3 2022 19:06:10 UTC [火 11月 15 21:25:33 JST 2022]
-情報: サーバーのバージョン番号: 9.0.68.0 [火 11月 15 21:25:33 JST 2022]
-情報: OS 名:                    Mac OS X [火 11月 15 21:25:33 JST 2022]
-情報: OS バージョン:            12.6 [火 11月 15 21:25:33 JST 2022]
-情報: アーキテクチャ:           x86_64 [火 11月 15 21:25:33 JST 2022]
-情報: Java Home:                /Applications/Eclipse_2022-09.app/Contents/java/17/Home [火 11月 15 21:25:33 JST 2022]
-情報: JVM バージョン:           17.0.4.1+1 [火 11月 15 21:25:33 JST 2022]
-情報: JVM ベンダ:               Eclipse Adoptium [火 11月 15 21:25:33 JST 2022]
-情報: CATALINA_BASE:            /Users/nattsukun/LetsEngineer/curriculum/.metadata/.plugins/org.eclipse.wst.server.core/tmp0 [火 11月 15 21:25:33 JST 2022]
-情報: CATALINA_HOME:            /Applications/Eclipse_2022-09.app/Contents/tomcat/9 [火 11月 15 21:25:33 JST 2022]
-情報: コマンドライン引数:       -Dcatalina.base=/Users/nattsukun/LetsEngineer/curriculum/.metadata/.plugins/org.eclipse.wst.server.core/tmp0 [火 11月 15 21:25:33 JST 2022]
-情報: コマンドライン引数:       -Dcatalina.home=/Applications/Eclipse_2022-09.app/Contents/tomcat/9 [火 11月 15 21:25:33 JST 2022]
-情報: コマンドライン引数:       -Dwtp.deploy=/Users/nattsukun/LetsEngineer/curriculum/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps [火 11月 15 21:25:33 JST 2022]
-情報: コマンドライン引数:       --add-opens=java.base/java.lang=ALL-UNNAMED [火 11月 15 21:25:33 JST 2022]
-情報: コマンドライン引数:       --add-opens=java.base/java.io=ALL-UNNAMED [火 11月 15 21:25:33 JST 2022]
-情報: コマンドライン引数:       --add-opens=java.base/java.util=ALL-UNNAMED [火 11月 15 21:25:33 JST 2022]
-情報: コマンドライン引数:       --add-opens=java.base/java.util.concurrent=ALL-UNNAMED [火 11月 15 21:25:33 JST 2022]
-情報: コマンドライン引数:       --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED [火 11月 15 21:25:33 JST 2022]
-情報: コマンドライン引数:       -Dfile.encoding=UTF-8 [火 11月 15 21:25:33 JST 2022]
-情報: コマンドライン引数:       -XX:+ShowCodeDetailsInExceptionMessages [火 11月 15 21:25:33 JST 2022]
-情報: 商用環境に最適な性能を発揮する APR ベースの Tomcat ネイティブライブラリが java.library.path [/Users/nattsukun/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.] に存在しません。 [火 11月 15 21:25:33 JST 2022]
-情報: プロトコルハンドラ ["http-nio-8080"] を初期化します。 [火 11月 15 21:25:33 JST 2022]
-情報: サーバーの初期化 [813] ミリ秒 [火 11月 15 21:25:33 JST 2022]
-情報: サービス [Catalina] を起動します [火 11月 15 21:25:33 JST 2022]
-情報: サーブレットエンジンの起動：[Apache Tomcat/9.0.68] [火 11月 15 21:25:33 JST 2022]
-情報: 少なくとも1つのJARでTLDをスキャンしましたが、TLDが含まれていませんでした。スキャンしたもののTLDが見つからなかったJARの完全なリストについては、このロガーのデバッグログを有効にしてください。スキャン中に不要なJARをスキップすると、起動時間とJSPのコンパイル時間が短縮されます。 [火 11月 15 21:25:34 JST 2022]
-情報: プロトコルハンドラー ["http-nio-8080"] を開始しました。 [火 11月 15 21:25:34 JST 2022]
-情報: サーバーの起動 [665] ミリ秒 [火 11月 15 21:25:34 JST 2022]
-[MEMORY:20669568][2022/11/15 09:25:55.362] [org.apache.jsp.login_jsp] [_jspService] [161] セッションなし
+情報: Serverのバージョン名:     Apache Tomcat/9.0.68 [水 11月 23 01:00:25 JST 2022]
+情報: Server ビルド:            Oct 3 2022 19:06:10 UTC [水 11月 23 01:00:25 JST 2022]
+情報: サーバーのバージョン番号: 9.0.68.0 [水 11月 23 01:00:25 JST 2022]
+情報: OS 名:                    Mac OS X [水 11月 23 01:00:25 JST 2022]
+情報: OS バージョン:            12.6 [水 11月 23 01:00:25 JST 2022]
+情報: アーキテクチャ:           x86_64 [水 11月 23 01:00:25 JST 2022]
+情報: Java Home:                /Applications/Eclipse_2022-09.app/Contents/java/17/Home [水 11月 23 01:00:25 JST 2022]
+情報: JVM バージョン:           17.0.4.1+1 [水 11月 23 01:00:25 JST 2022]
+情報: JVM ベンダ:               Eclipse Adoptium [水 11月 23 01:00:25 JST 2022]
+情報: CATALINA_BASE:            /Users/nattsukun/LetsEngineer/curriculum/.metadata/.plugins/org.eclipse.wst.server.core/tmp0 [水 11月 23 01:00:25 JST 2022]
+情報: CATALINA_HOME:            /Applications/Eclipse_2022-09.app/Contents/tomcat/9 [水 11月 23 01:00:25 JST 2022]
+情報: コマンドライン引数:       -Dcatalina.base=/Users/nattsukun/LetsEngineer/curriculum/.metadata/.plugins/org.eclipse.wst.server.core/tmp0 [水 11月 23 01:00:25 JST 2022]
+情報: コマンドライン引数:       -Dcatalina.home=/Applications/Eclipse_2022-09.app/Contents/tomcat/9 [水 11月 23 01:00:25 JST 2022]
+情報: コマンドライン引数:       -Dwtp.deploy=/Users/nattsukun/LetsEngineer/curriculum/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps [水 11月 23 01:00:25 JST 2022]
+情報: コマンドライン引数:       --add-opens=java.base/java.lang=ALL-UNNAMED [水 11月 23 01:00:25 JST 2022]
+情報: コマンドライン引数:       --add-opens=java.base/java.io=ALL-UNNAMED [水 11月 23 01:00:25 JST 2022]
+情報: コマンドライン引数:       --add-opens=java.base/java.util=ALL-UNNAMED [水 11月 23 01:00:25 JST 2022]
+情報: コマンドライン引数:       --add-opens=java.base/java.util.concurrent=ALL-UNNAMED [水 11月 23 01:00:25 JST 2022]
+情報: コマンドライン引数:       --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED [水 11月 23 01:00:25 JST 2022]
+情報: コマンドライン引数:       -Dfile.encoding=UTF-8 [水 11月 23 01:00:25 JST 2022]
+情報: コマンドライン引数:       -XX:+ShowCodeDetailsInExceptionMessages [水 11月 23 01:00:25 JST 2022]
+情報: 商用環境に最適な性能を発揮する APR ベースの Tomcat ネイティブライブラリが java.library.path [/Users/nattsukun/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.] に存在しません。 [水 11月 23 01:00:25 JST 2022]
+情報: プロトコルハンドラ ["http-nio-8080"] を初期化します。 [水 11月 23 01:00:25 JST 2022]
+情報: サーバーの初期化 [683] ミリ秒 [水 11月 23 01:00:25 JST 2022]
+情報: サービス [Catalina] を起動します [水 11月 23 01:00:25 JST 2022]
+情報: サーブレットエンジンの起動：[Apache Tomcat/9.0.68] [水 11月 23 01:00:25 JST 2022]
+情報: 少なくとも1つのJARでTLDをスキャンしましたが、TLDが含まれていませんでした。スキャンしたもののTLDが見つからなかったJARの完全なリストについては、このロガーのデバッグログを有効にしてください。スキャン中に不要なJARをスキップすると、起動時間とJSPのコンパイル時間が短縮されます。 [水 11月 23 01:00:26 JST 2022]
+情報: プロトコルハンドラー ["http-nio-8080"] を開始しました。 [水 11月 23 01:00:26 JST 2022]
+情報: サーバーの起動 [556] ミリ秒 [水 11月 23 01:00:26 JST 2022]
+[MEMORY:27750976][2022/11/23 01:00:27.617] [org.apache.jsp.login_jsp] [_jspService] [167] セッションあり
+[MEMORY:27750976][2022/11/23 01:00:27.619] [org.apache.jsp.login_jsp] [_jspService] [188] message = 
+[MEMORY:28279376][2022/11/23 01:00:38.077] [skillcheck.controller.BaseServlet] [<init>] [56] START
+[MEMORY:28279376][2022/11/23 01:00:38.080] [skillcheck.controller.BaseServlet] [<init>] [60] END
+[MEMORY:28279376][2022/11/23 01:00:38.084] [skillcheck.controller.EmployeeManagementController] [doPost] [100] START
+[MEMORY:28279376][2022/11/23 01:00:38.086] [skillcheck.controller.EmployeeManagementController] [getRequestType] [200] START
+[MEMORY:28279376][2022/11/23 01:00:38.087] [skillcheck.controller.EmployeeManagementController] [getRequestType] [203] requestTypeName = login
+[MEMORY:28279376][2022/11/23 01:00:38.088] [skillcheck.controller.EmployeeManagementController] [getRequestType] [222] this.responseBean = skillcheck.bean.ResponseBean@3369d04b
+[MEMORY:28279376][2022/11/23 01:00:38.088] [skillcheck.controller.EmployeeManagementController] [getRequestType] [232] END
+[MEMORY:28279376][2022/11/23 01:00:38.089] [skillcheck.controller.EmployeeManagementController] [doPost] [128] RequestType = LOGIN
+[MEMORY:28279376][2022/11/23 01:00:38.090] [skillcheck.service.BaseService] [<init>] [40] START
+[MEMORY:28279376][2022/11/23 01:00:38.090] [skillcheck.service.BaseService] [<init>] [47] END
+[MEMORY:28279376][2022/11/23 01:00:38.092] [skillcheck.controller.EmployeeManagementController] [lambda$1] [147] reqEmpId = empId
+[MEMORY:28279376][2022/11/23 01:00:38.092] [skillcheck.controller.EmployeeManagementController] [doPost] [152] --- ログイン ---
+[MEMORY:28279376][2022/11/23 01:00:38.092] [skillcheck.controller.BaseServlet] [validateLogin] [137] START
+[MEMORY:28279376][2022/11/23 01:00:38.094] [skillcheck.service.EmployeeManagementService] [getEmployeeData] [52] START
+[MEMORY:28279376][2022/11/23 01:00:38.094] [skillcheck.service.EmployeeManagementService] [executeDBAccess] [69] START
+[MEMORY:28279376][2022/11/23 01:00:38.094] [skillcheck.service.EmployeeManagementService] [executeDBAccess] [70] ExecuteCase = FIND_BY_EMPID
+[MEMORY:28279376][2022/11/23 01:00:38.095] [skillcheck.service.BaseService] [executeGetConnection] [54] START
+[MEMORY:31945280][2022/11/23 01:00:38.310] [skillcheck.service.BaseService] [executeGetConnection] [76] END
+[MEMORY:31945280][2022/11/23 01:00:38.311] [skillcheck.service.EmployeeManagementService] [executeSelectQuery] [179] START
+[MEMORY:31945280][2022/11/23 01:00:38.311] [skillcheck.service.EmployeeManagementService] [executeSelectQuery] [211] pEmployeeBeanList[0].empId = 1111
+[MEMORY:32471616][2022/11/23 01:00:38.333] [skillcheck.service.EmployeeManagementService] [executeSelectQuery] [236] SQL: SELECT * FROM employee WHERE empId = '1111' AND deleteFlg = '0'
+[MEMORY:32471616][2022/11/23 01:00:38.333] [skillcheck.service.EmployeeManagementService] [executeSelectQuery] [255] END
+[MEMORY:32471616][2022/11/23 01:00:38.336] [skillcheck.service.EmployeeManagementService] [executeDBAccess] [87] meta = org.postgresql.jdbc.PgResultSetMetaData@973d0e1
+[MEMORY:32471616][2022/11/23 01:00:38.337] [skillcheck.service.EmployeeManagementService] [executeDBAccess] [94] empid: 1111 
+[MEMORY:32471616][2022/11/23 01:00:38.337] [skillcheck.service.EmployeeManagementService] [executeDBAccess] [94] password: 88d8580a7ea163777a19f779d77e4339d68c1c24f39f3fd90a4b1e64ff7620b8
+[MEMORY:32471616][2022/11/23 01:00:38.337] [skillcheck.service.EmployeeManagementService] [executeDBAccess] [94] name: 夏目拓弥
+[MEMORY:32471616][2022/11/23 01:00:38.337] [skillcheck.service.EmployeeManagementService] [executeDBAccess] [94] mail: nattukun.1111@icloud.com
+[MEMORY:32471616][2022/11/23 01:00:38.338] [skillcheck.service.EmployeeManagementService] [executeDBAccess] [94] programinglanguage: java
+[MEMORY:32471616][2022/11/23 01:00:38.338] [skillcheck.service.EmployeeManagementService] [executeDBAccess] [94] comment: 頑張ります
+[MEMORY:32471616][2022/11/23 01:00:38.338] [skillcheck.service.EmployeeManagementService] [executeDBAccess] [94] createdate: 2022/10/31 16:10:53
+[MEMORY:32471616][2022/11/23 01:00:38.338] [skillcheck.service.EmployeeManagementService] [executeDBAccess] [94] updatedate: 2022/10/31 16:10:53
+[MEMORY:32471616][2022/11/23 01:00:38.339] [skillcheck.service.EmployeeManagementService] [executeDBAccess] [134] reqStatus  = 0
+[MEMORY:32471616][2022/11/23 01:00:38.339] [skillcheck.service.EmployeeManagementService] [executeDBAccess] [135] reqMessage = 
+[MEMORY:32471616][2022/11/23 01:00:38.340] [skillcheck.service.BaseService] [executeCloseSQL] [114] START
+[MEMORY:32471616][2022/11/23 01:00:38.342] [skillcheck.service.BaseService] [executeCloseSQL] [125] END
+[MEMORY:32471616][2022/11/23 01:00:38.343] [skillcheck.service.EmployeeManagementService] [executeDBAccess] [165] END
+[MEMORY:32471616][2022/11/23 01:00:38.343] [skillcheck.service.EmployeeManagementService] [getEmployeeData] [56] END
+[MEMORY:32993856][2022/11/23 01:00:38.371] [skillcheck.util.PasswordHashUtil] [getSafetyPassword] [63] HASHED: 2339d1cb56b832b915e1437f71aa6caf9439543714e6fdc72af7f5a4ac2beff2
+[MEMORY:32993856][2022/11/23 01:00:38.372] [skillcheck.controller.BaseServlet] [validateLogin] [191] isLoginError = true
+[MEMORY:32993856][2022/11/23 01:00:38.372] [skillcheck.controller.BaseServlet] [validateLogin] [193] END
+[MEMORY:32993856][2022/11/23 01:00:38.372] [skillcheck.controller.EmployeeManagementController] [doPost] [167] reqStatus  = 0
+[MEMORY:32993856][2022/11/23 01:00:38.372] [skillcheck.controller.EmployeeManagementController] [doPost] [168] reqMessage = パスワードに誤りがあります。
+[MEMORY:32993856][2022/11/23 01:00:38.373] [skillcheck.controller.EmployeeManagementController] [doPost] [176] 遷移先 = null
+[MEMORY:32993856][2022/11/23 01:00:38.373] [skillcheck.controller.EmployeeManagementController] [doPost] [189] END
+[MEMORY:32993856][2022/11/23 01:00:38.382] [org.apache.jsp.login_jsp] [_jspService] [167] セッションあり
+[MEMORY:32993856][2022/11/23 01:00:38.382] [org.apache.jsp.login_jsp] [_jspService] [188] message = パスワードに誤りがあります。

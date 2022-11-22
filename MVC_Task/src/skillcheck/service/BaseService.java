@@ -60,8 +60,7 @@ public abstract class BaseService {
             Class.forName(ConstSQL.JDBC_POSTGRES_DRIVER);
 
             // FIXME Step-5-2: DBへ接続するための初期設定（引数すべてに記述すること）
-            this.connection = DriverManager.getConnection(
-            		ConstSQL.JDBC_CONNECTION,ConstSQL.JDBC_POSTGRES_USER,ConstSQL.JDBC_POSTGRES_PASS);
+            this.connection = DriverManager.getConnection(ConstSQL.JDBC_CONNECTION,ConstSQL.JDBC_POSTGRES_USER,ConstSQL.JDBC_POSTGRES_PASS);
 
             // オートコミットOFF
             this.connection.setAutoCommit(false);
