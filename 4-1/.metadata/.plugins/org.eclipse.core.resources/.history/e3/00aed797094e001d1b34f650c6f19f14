@@ -1,0 +1,23 @@
+package check;
+
+public class Main {
+
+  private String firstName;
+  private String lastName;
+
+  public void main(){
+    firstName = "夏目";
+    lastName = "拓弥";
+  }
+
+  private static String printName(String firstName, String lastName) {
+    return  firstName + lastName;
+  }
+ 
+  public static void main(String[] args) {
+      System.out.println(printName("夏目","拓弥"));
+    Pet pet = new Pet("first","second");
+    pet.introduce();
+    Pet.introduce();
+ }
+}
